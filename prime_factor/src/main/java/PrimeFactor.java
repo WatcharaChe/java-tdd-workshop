@@ -5,11 +5,14 @@ public class PrimeFactor {
     public List<Integer> of(int number) {
         List<Integer> list = new ArrayList<Integer>();
 
-        for (int i = 2; i <= number; i++) {
+        for (int i = 2; i <= number / 2; i++) {
             while (number % i == 0) {
                 list.add(i);
                 number /= i;
             }
+        }
+        if(number > 1){
+            list.add(number);
         }
         return list;
 //
