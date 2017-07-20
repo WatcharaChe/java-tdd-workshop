@@ -35,6 +35,13 @@ public class FormatPhoneNumberTest {
     }
 
     @Test
+    public void evenPhoneNumber2() {
+        FormatPhoneNumber formatPhoneNumber = new FormatPhoneNumber();
+        String actualResult = formatPhoneNumber.solution("1");
+        assertEquals("1", actualResult);
+    }
+
+    @Test
     public void oddPhoneNumberOnlyLastGroup() {
         FormatPhoneNumber formatPhoneNumber = new FormatPhoneNumber();
         String actualResult = formatPhoneNumber.solution("004-448-555-583-61");
