@@ -5,6 +5,7 @@ public class FormatPhoneNumber {
     }
 
     public String solution(String input) {
+        input = removeNonDigit(input);
         String formatPhoneNumber[] = input.split("(?<=\\G...)");
         int length = formatPhoneNumber.length;
         String ans = "";
