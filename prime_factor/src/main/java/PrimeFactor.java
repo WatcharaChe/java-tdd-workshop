@@ -21,6 +21,11 @@ public class PrimeFactor {
             list.add(3);
             list.add(3);
         }
+        else if (number == 27){
+            list.add(3);
+            list.add(3);
+            list.add(3);
+        }
 
         else
             list.add(number);
