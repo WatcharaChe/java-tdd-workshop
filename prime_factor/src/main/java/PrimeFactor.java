@@ -7,7 +7,7 @@ public class PrimeFactor {
         if (number == 1) {
 
         } else
-            list.add(2);
+            list.add(number);
         return list;
     }
 }
